@@ -1,4 +1,10 @@
-Here is a brief example of how to use this library:
+System requirements:
+```
+rspec
+gem install rspec
+```
+
+A brief example of how to use this library:
 ```
 require 'path/to/file/playing_cards.rb'
 
