@@ -15,7 +15,6 @@ module PlayingCards
         cards.push(deck.cards[0])
         deck.cards.shift
       end
-
       self
     end
 

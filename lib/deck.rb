@@ -7,6 +7,7 @@ module PlayingCards
     SUITS = %w{ Clubs Diamonds Hearts Spades }
 
     attr_accessor :cards, :discarded
+    
     def initialize(args = {})
       @cards = []
       @discarded = []
