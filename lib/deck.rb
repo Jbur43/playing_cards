@@ -7,14 +7,14 @@ module PlayingCards
     SUITS = %w{ Clubs Diamonds Hearts Spades }
 
     attr_accessor :cards, :discarded
-    def initialize(options={})
+    def initialize(args = {})
       @cards = []
       @discarded = []
-      options[:number_decks] ||= 1
+      args[:number_decks] ||= 1
 
-      options[:number_decks].times do
+      args[:number_decks].times do
         (RANKS).product(SUITS).each do |rank, suit|
-          @cards << Card.new(rank, suit)
+          @cards << Card.new({rank: rank, suit: suit})
         end
       end
     end

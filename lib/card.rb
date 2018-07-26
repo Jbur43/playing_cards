@@ -2,9 +2,9 @@ module PlayingCards
   class Card
     attr_reader :rank, :suit
 
-    def initialize(rank, suit)
-      @rank = rank_to_i(rank)
-      @suit = suit
+    def initialize(args = {})
+      @rank = rank_to_i(args[:rank])
+      @suit = args[:suit]
     end
 
     def rank_to_i(rank)
