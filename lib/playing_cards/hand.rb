@@ -2,7 +2,7 @@ require_relative 'deck.rb'
 
 module PlayingCards
   class Hand
-    attr_accessor :deck, :draw_count, :cards, :discarded
+    attr_accessor :deck, :draw_count, :cards
 
     def initialize(args = {})
       @deck = args[:deck]
